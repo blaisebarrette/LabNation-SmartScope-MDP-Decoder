@@ -1,0 +1,35 @@
+name: Build on Windows
+
+on:
+  push:
+    branches: [ main ] # Or your default branch
+  pull_request:
+    branches: [ main ] # Or your default branch
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Generate Solution using Protobuild
+      run: .\Protobuild.exe
+      shell: cmd # Use cmd shell for .exe execution
+
+    - name: Add MSBuild to path
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Build Solution
+      run: msbuild LabNation.Decoders.sln /p:Configuration=Release
+      # Note: Assumes Protobuild generates 'LabNation.Decoders.sln'.
+      # This filename might need adjustment if Protobuild uses a different name.
+
+    # Optional: Add steps here to upload build artifacts (DLLs) if needed
+    # - name: Upload build artifacts
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: decoder-dlls
+    #     path: |
+    #       **/bin/Release/*.dll # Adjust this path based on actual build output locations 
