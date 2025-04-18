@@ -1,9 +1,0 @@
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/bin/Debug/netstandard2.0/LabNationInterfaces.deps.json
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/bin/Debug/netstandard2.0/LabNationInterfaces.dll
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/bin/Debug/netstandard2.0/LabNationInterfaces.pdb
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/obj/Debug/netstandard2.0/LabNationInterfaces.csproj.AssemblyReference.cache
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/obj/Debug/netstandard2.0/LabNationInterfaces.GeneratedMSBuildEditorConfig.editorconfig
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/obj/Debug/netstandard2.0/LabNationInterfaces.csproj.CoreCompileInputs.cache
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/obj/Debug/netstandard2.0/LabNationInterfaces.sourcelink.json
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/obj/Debug/netstandard2.0/LabNationInterfaces.dll
-/Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/obj/Debug/netstandard2.0/LabNationInterfaces.pdb
