@@ -23,7 +23,7 @@ jobs:
 
     # --- Add step to install .NET 4.0 Developer Pack ---
     - name: Install .NET Framework 4.0 Developer Pack
-      run: choco install netframework-4.0-full -y --no-progress
+      run: choco install microsoft-net-framework-4.0-developer-pack -y --no-progress
       shell: pwsh
     # ----------------------------------------------------
 
