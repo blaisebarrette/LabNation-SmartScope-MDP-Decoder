@@ -47,6 +47,13 @@ jobs:
       # Note: Assumes Protobuild generates 'LabNation.Decoders.sln'.
       # This filename might need adjustment if Protobuild uses a different name.
 
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: decoder-dlls
+        path: labnation_decoders_repo/**/bin/Release/*.dll
+        if-no-files-found: error # Optional: fail the step if no DLLs are found
+
     # Optional: Add steps here to upload build artifacts (DLLs) if needed
     # - name: Upload build artifacts
     #   uses: actions/upload-artifact@v4
