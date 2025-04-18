@@ -21,11 +21,21 @@ jobs:
       shell: cmd # Use cmd shell for .exe execution
       working-directory: ./labnation_decoders_repo # Run in submodule directory
 
-    # --- Add step to install .NET 4.0 Developer Pack ---
-    - name: Install .NET Framework 4.0 Developer Pack
-      run: choco install microsoft-net-framework-4.0-developer-pack -y --no-progress
-      shell: pwsh
+    # --- Remove failed Chocolatey step ---
+    # - name: Install .NET Framework 4.0 Developer Pack
+    #  run: choco install microsoft-net-framework-4.0-developer-pack -y --no-progress # Yet another package name attempt
+    #  shell: pwsh
     # ----------------------------------------------------
+
+    # --- Add step to install .NET 4.0 Targeting Pack via VS Installer ---
+    - name: Install .NET Framework 4.0 Targeting Pack
+      run: | 
+        & "${env:ProgramFiles(x86)}/Microsoft Visual Studio/Installer/vs_installer.exe" modify `
+          --installPath "${env:ProgramFiles}/Microsoft Visual Studio/2022/Enterprise" `
+          --add Microsoft.Net.Component.4.0.TargetingPack `
+          --quiet --norestart --nocache
+      shell: pwsh
+    # -------------------------------------------------------------------
 
     - name: Add MSBuild to path
       uses: microsoft/setup-msbuild@v2
