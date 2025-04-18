@@ -21,6 +21,13 @@ jobs:
       shell: cmd # Use cmd shell for .exe execution
       working-directory: ./labnation_decoders_repo # Run in submodule directory
 
+    # --- Add step to list files after Protobuild --- 
+    - name: List files after Protobuild
+      run: dir
+      shell: cmd
+      working-directory: ./labnation_decoders_repo
+    # -----------------------------------------------
+
     - name: Add MSBuild to path
       uses: microsoft/setup-msbuild@v2
 
