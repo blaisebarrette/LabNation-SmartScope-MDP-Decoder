@@ -1,3 +1,3 @@
 [submodule "labnation_decoders_repo"]
 	path = labnation_decoders_repo
-	url = https://github.com/labnation/decoders.git
+	url = https://github.com/blaisebarrette/MDB-decoder.git
