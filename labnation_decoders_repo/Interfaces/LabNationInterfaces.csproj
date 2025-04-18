@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Cible .NET Framework 4.7.2 pour compatibilité Mono/SmartScope -->
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion> 
+    <!-- Disable auto-generation of AssemblyInfo attributes -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <!-- Aucune dépendance externe nécessaire pour ce projet d'interfaces simple -->
+
+</Project>

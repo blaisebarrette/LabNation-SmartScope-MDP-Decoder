@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = LabNationInterfaces
+build_property.ProjectDir = /Users/blaise/Desktop/MDB Conversion Nayax/SmartScope MDB Decoder/labnation_decoders_repo/Interfaces/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
