@@ -1,0 +1,27 @@
+-----------------------------------------------------------------------------------------
+------------------------------         CRASH REPORT         ------------------------------
+Timestamp: 2025-04-21 01:33:10
+SmartScopeApp version: 2020.121.1612.0
+OS: UNKNOWN
+Error message: Value cannot be null.
+Parameter name: type
+Source: mscorlib
+TargetSite: CreateInstance
+StackTrace:   at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic, System.Boolean wrapExceptions) [0x00003] in <4ce69280878a4ebdbc54175071d7ecdf>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00000] in <4ce69280878a4ebdbc54175071d7ecdf>:0 
+  at System.Activator.CreateInstance (System.Type type) [0x00000] in <4ce69280878a4ebdbc54175071d7ecdf>:0 
+  at ESuite.UIHandler.LoadProcessorSettings () [0x000f3] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+  at ESuite.UIHandler.SwitchMainMode (ESuite.MainModes mainMode, ESuite.Drawables.EDrawable failureToastLocationDrawable) [0x006cb] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+  at ESuite.UIHandler.InitializeMainGrid () [0x00228] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+  at ESuite.UIHandler.ApplySettings (ESuite.Settings settings) [0x000db] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+  at ESuite.UIHandler.Initialize (Microsoft.Xna.Framework.Graphics.GraphicsDevice graphicsDevice) [0x0004d] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+  at ESuite.ScopeApp.Initialize (Microsoft.Xna.Framework.Graphics.GraphicsDevice graphicsDevice, Microsoft.Xna.Framework.Content.ContentManager content, LabNation.Common.LogLevel logLevel, System.Int32 pixelsPerInch) [0x0012b] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+  at ESuite.SmartScopeGui.Initialize () [0x00028] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+  at Microsoft.Xna.Framework.Game.DoInitialize () [0x0002c] in <cc5a6e4d52394c6284a957a7467027af>:0 
+  at Microsoft.Xna.Framework.Game.Run (Microsoft.Xna.Framework.GameRunBehavior runBehavior) [0x0002d] in <cc5a6e4d52394c6284a957a7467027af>:0 
+  at Microsoft.Xna.Framework.Game.Run () [0x0000c] in <cc5a6e4d52394c6284a957a7467027af>:0 
+  at ESuite.AppDelegate.DidFinishLaunching (Foundation.NSNotification notification) [0x00021] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+  at (wrapper managed-to-native) AppKit.NSApplication.NSApplicationMain(int,string[])
+  at AppKit.NSApplication.Main (System.String[] args) [0x00040] in <f6d1b26876ca4bda88680e75d2f55967>:0 
+  at ESuite.Program.Main (System.String[] args) [0x00014] in <77b84f1a1bb6448e8ba822ad5685a1d6>:0 
+-----------------------------------------------------------------------------------------
