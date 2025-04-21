@@ -40,13 +40,8 @@ jobs:
     - name: Add MSBuild to path
       uses: microsoft/setup-msbuild@v2
 
-    - name: Restore NuGet packages
-      run: msbuild /t:Restore MyDecoders/MyDecoders.csproj
-      working-directory: ./labnation_decoders_repo
-      shell: cmd
-
     - name: Build Solution
-      run: msbuild MyDecoders/MyDecoders.csproj /p:Configuration=Release # Build only MyDecoders project
+      run: msbuild Decoders.Windows.sln /p:Configuration=Release # Removed FrameworkPathOverride
       working-directory: ./labnation_decoders_repo 
       shell: cmd # Use cmd shell for MSBuild
       # Note: Assumes Protobuild generates 'LabNation.Decoders.sln'.

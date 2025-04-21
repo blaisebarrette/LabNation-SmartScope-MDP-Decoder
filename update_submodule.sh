@@ -36,7 +36,7 @@ fi
 echo "--- Updating main repository ---"
 cd .. || exit 1
 
-echo "Adding submodule update to main repository..."
+echo "Adding changes to main repository..."
 git add .
 
 echo "Committing main repository with message: 'Update submodule: $COMMIT_MESSAGE'"
